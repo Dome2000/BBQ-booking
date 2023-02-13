@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_page_emp"
+        android:title="หน้าแรก"
+        android:icon="@drawable/ic_home" />
+    <item
+        android:id="@+id/accountEmp"
+        android:title="บัญชี"
+        android:icon="@drawable/ic_account" />
+</menu>

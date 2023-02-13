@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeLoginActivity"
+    android:background="#E15731"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/haruto"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/login_emp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/sarabun_light"
+        android:text="เข้าสู่ระบบสำหรับพนักงาน"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/login_emp">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/usernameEDT_emp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textShortMessage"
+            android:fontFamily="@font/sarabun_light"
+            android:background="@drawable/edittext_border3"
+            android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_emp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/username">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/passwordEDT_emp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:fontFamily="@font/sarabun_light"
+            android:background="@drawable/edittext_border3"
+            android:textSize="20sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ลืมรหัสผ่าน?"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sarabun_light"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/password_emp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textAllCaps="false" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginBtn_emp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="@font/sarabun_light"
+        android:text="เข้าสู่ระบบ"
+        android:textSize="20dp"
+        android:background="@drawable/edittext_border3"
+        android:layout_below="@id/forgetPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="loginEmp"/>
+
+</RelativeLayout>

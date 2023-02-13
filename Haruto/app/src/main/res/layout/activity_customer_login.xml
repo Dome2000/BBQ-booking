@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerLoginActivity"
+    android:background="#E15731"
+    android:padding="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E15731">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/haruto"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/login_cus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เข้าสู่ระบบสำหรับลูกค้า"
+            android:textSize="25sp"
+            android:fontFamily="@font/sarabun_light"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Username"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/login_cus">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/usernameEDT_cus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border3"
+                android:fontFamily="@font/sarabun_light"
+                android:inputType="textShortMessage"
+                android:textSize="17sp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_cus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/username">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/passwordEDT_cus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:fontFamily="@font/sarabun_light"
+                android:background="@drawable/edittext_border3"
+                android:textSize="17sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_cus"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/sarabun_light"
+            android:text="ลืมรหัสผ่าน?"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginBtn_cus"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forgetPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border3"
+            android:fontFamily="@font/sarabun_light"
+            android:text="เข้าสู่ระบบ"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:onClick="login"/>
+
+
+
+        <TextView
+            android:id="@+id/text_cus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginBtn_cus"
+            android:fontFamily="@font/sarabun_light"
+            android:text="ยังไม่ได้เป็นสมาชิก"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginBtn_cus"
+            android:layout_marginLeft="260dp"
+            android:fontFamily="@font/sarabun_light"
+            android:text="สมัครสมาชิก"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</ScrollView>
